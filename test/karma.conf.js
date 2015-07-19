@@ -39,7 +39,7 @@ module.exports = function(config) {
       //"../mock/**/*.js",
       //"test/spec/**/*.js",
       "partials/directives/*.html",
-      "../test/spec/**/durationsSpec.js"
+      "../test/spec/**/eventThumbnailSpec.js"
 
     ],
 
@@ -64,7 +64,7 @@ module.exports = function(config) {
     ],
 
     preprocessors:{
-        //'**/*.html':'ng-html2js'
+        '**/*.html':'ng-html2js'
     },
 
 
@@ -72,8 +72,8 @@ module.exports = function(config) {
     plugins: [
       //"karma-phantomjs-launcher",
         "karma-chrome-launcher",
-        "karma-jasmine"
-        //"karma-ng-html2js-preprocessor"
+        "karma-jasmine",
+        "karma-ng-html2js-preprocessor"
     ],
 
     // Continuous Integration mode
